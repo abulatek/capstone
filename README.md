@@ -1,2 +1,2 @@
-# stat494
-Alyssa's repository for STAT 494: Correlated Data
+# capstone
+Repository for Correlated Data capstone (spring 2020)

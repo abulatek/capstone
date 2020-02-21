@@ -1,0 +1,927 @@
+<metadata xml:lang="en">
+	<Esri>
+		<CreaDate>20190430</CreaDate>
+		<CreaTime>18575500</CreaTime>
+		<ArcGISFormat>1.0</ArcGISFormat>
+		<SyncOnce>FALSE</SyncOnce>
+		<DataProperties>
+			<lineage>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.5\ArcToolbox\Toolboxes\Data Management Tools.tbx\TruncateTable" Date="20190430" Time="185755">TruncateTable "Database Connections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey"</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.5\ArcToolbox\Toolboxes\Data Management Tools.tbx\Append" Date="20190430" Time="190035">Append \\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey "Database Connections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey" NO_TEST "COUNTY_PIN "County PIN" true true false 22 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,COUNTY_PIN,-1,-1;STATE_PIN "State PIN" true true false 28 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,STATE_PIN,-1,-1;ANUMBERPRE "Address Number Prefix" true true false 15 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ANUMBERPRE,-1,-1;ANUMBER "Address Number" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ANUMBER,-1,-1;ANUMBERSUF "Address Number Suffix" true true false 15 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ANUMBERSUF,-1,-1;ST_PRE_MOD "Street Name Pre Modifier" true true false 15 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_PRE_MOD,-1,-1;ST_PRE_DIR "Street Name Pre Directional" true true false 9 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_PRE_DIR,-1,-1;ST_PRE_TYP "Street Name Pre Type" true true false 35 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_PRE_TYP,-1,-1;ST_PRE_SEP "Street Name Pre Separator" true true false 20 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_PRE_SEP,-1,-1;ST_NAME "Street Name" true true false 60 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_NAME,-1,-1;ST_POS_TYP "Street Name Post Type" true true false 15 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_POS_TYP,-1,-1;ST_POS_DIR "Street Name Post Directional" true true false 9 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_POS_DIR,-1,-1;ST_POS_MOD "Street Name Post Modifier" true true false 15 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_POS_MOD,-1,-1;SUB_TYPE1 "Subaddress Type 1" true true false 12 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SUB_TYPE1,-1,-1;SUB_ID1 "Subaddress Identifier 1" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SUB_ID1,-1,-1;SUB_TYPE2 "Subaddress Type 2" true true false 12 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SUB_TYPE2,-1,-1;SUB_ID2 "Subaddress Identifier 2" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SUB_ID2,-1,-1;ZIP "ZIP Code" true true false 5 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ZIP,-1,-1;ZIP4 "ZIP Plus 4
+" true true false 4 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ZIP4,-1,-1;CTU_NAME "CTU Name" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,CTU_NAME,-1,-1;CTU_ID_TXT "CTU Code" true true false 8 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,CTU_ID_TXT,-1,-1;POSTCOMM "Postal Community Name" true true false 40 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,POSTCOMM,-1,-1;CO_CODE "County Code" true true false 5 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,CO_CODE,-1,-1;CO_NAME "County Name" true true false 40 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,CO_NAME,-1,-1;STATE_CODE "State Code" true true false 2 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,STATE_CODE,-1,-1;LOT "Lot" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,LOT,-1,-1;BLOCK "Block" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,BLOCK,-1,-1;PLAT_NAME "Plat Name" true true false 150 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,PLAT_NAME,-1,-1;OWNER_NAME "Owner Name" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWNER_NAME,-1,-1;OWNER_MORE "Owner More Information" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWNER_MORE,-1,-1;OWN_ADD_L1 "Owner Address Line 1" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWN_ADD_L1,-1,-1;OWN_ADD_L2 "Owner Address Line 2" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWN_ADD_L2,-1,-1;OWN_ADD_L3 "Owner Address Line 3" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWN_ADD_L3,-1,-1;OWN_ADD_L4 "Owner Address Line 4" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWN_ADD_L4,-1,-1;TAX_NAME "Taxpayer Name" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_NAME,-1,-1;TAX_ADD_L1 "Taxpayer Address Line 1
+" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_ADD_L1,-1,-1;TAX_ADD_L2 "Taxpayer Address Line 2" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_ADD_L2,-1,-1;TAX_ADD_L3 "Taxpayer Address Line 3" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_ADD_L3,-1,-1;TAX_ADD_L4 "Taxpayer Address Line 4" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_ADD_L4,-1,-1;LANDMARK "Landmark" true true false 150 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,LANDMARK,-1,-1;HOMESTEAD "Homestead Exemption" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,HOMESTEAD,-1,-1;ACRES_POLY "Acres (Polygon)" true true false 8 Double 8 38 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ACRES_POLY,-1,-1;ACRES_DEED "Acres (Deed)" true true false 8 Double 8 38 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ACRES_DEED,-1,-1;EMV_LAND "Estimated Value of Land" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,EMV_LAND,-1,-1;EMV_BLDG "Estimated Value of Building" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,EMV_BLDG,-1,-1;EMV_TOTAL "Estimated Value Total" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,EMV_TOTAL,-1,-1;TAX_YEAR "Tax Year" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_YEAR,-1,-1;MKT_YEAR "Market Year" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,MKT_YEAR,-1,-1;TAX_CAPAC "Tax Capacity" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_CAPAC,-1,-1;TOTAL_TAX "Total Tax" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TOTAL_TAX,-1,-1;SPEC_ASSES "Special Assessment" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SPEC_ASSES,-1,-1;USECLASS1 "Use Classification 1" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,USECLASS1,-1,-1;USECLASS2 "Use Classification 2" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,USECLASS2,-1,-1;USECLASS3 "Use Classification 3" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,USECLASS3,-1,-1;USECLASS4 "Use Classification 4" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,USECLASS4,-1,-1;MULTI_USES "Multiple Uses" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,MULTI_USES,-1,-1;TAX_EXEMPT "Tax Exempt" true true false 3 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_EXEMPT,-1,-1;XUSECLASS1 "Exempt Use Classification 1" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,XUSECLASS1,-1,-1;XUSECLASS2 "Exempt Use Classification 2" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,XUSECLASS2,-1,-1;XUSECLASS3 "Exempt Use Classification 3" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,XUSECLASS3,-1,-1;XUSECLASS4 "Exempt Use Classification 4" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,XUSECLASS4,-1,-1;DWELL_TYPE "Dwelling Type
+" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,DWELL_TYPE,-1,-1;HOME_STYLE "Home Style" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,HOME_STYLE,-1,-1;FIN_SQ_FT "Finished Square Footage
+" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,FIN_SQ_FT,-1,-1;GARAGE "Presence of Garage" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,GARAGE,-1,-1;GARAGESQFT "Square Footage of Garage" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,GARAGESQFT,-1,-1;BASEMENT "Presence of Basement" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,BASEMENT,-1,-1;HEATING "Type of Heating" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,HEATING,-1,-1;COOLING "Type of Cooling" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,COOLING,-1,-1;YEAR_BUILT "Year Built" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,YEAR_BUILT,-1,-1;NUM_UNITS "Number of Residential Units" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,NUM_UNITS,-1,-1;SALE_DATE "Date of Last Sale" true true false 8 Date 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SALE_DATE,-1,-1;SALE_VALUE "Value at Last Sale" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SALE_VALUE,-1,-1;GREEN_ACRE "Green Acres Program" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,GREEN_ACRE,-1,-1;OPEN_SPACE "Open Space" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OPEN_SPACE,-1,-1;AG_PRESERV "Agricultural Preserve" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,AG_PRESERV,-1,-1;AGPRE_ENRD "Agricultural Preserve Enroll Date" true true false 8 Date 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,AGPRE_ENRD,-1,-1;AGPRE_EXPD "Agricultural Preserve Expiration Date" true true false 8 Date 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,AGPRE_EXPD,-1,-1;ABB_LEGAL "Abbreviated Legal Description" true true false 254 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ABB_LEGAL,-1,-1;EDIT_DATE "Edit Date" true true false 8 Date 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,EDIT_DATE,-1,-1;EXP_DATE "Export Date" true true false 8 Date 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,EXP_DATE,-1,-1;POLYPTREL "Polygon to Point Relationship" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,POLYPTREL,-1,-1;N_STANDARD "Non-Standard Parcel Status" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,N_STANDARD,-1,-1;OWNERSHIP "Ownership Category" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWNERSHIP,-1,-1;SCHOOL_DST "School District" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SCHOOL_DST,-1,-1;WSHD_DST "Watershed District" true true false 50 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,WSHD_DST,-1,-1;SECTION "Section" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SECTION,-1,-1;TOWNSHIP "Township" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TOWNSHIP,-1,-1;RANGE "Range" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,RANGE,-1,-1;RANGE_DIR "Range Direction" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,RANGE_DIR,-1,-1;PRIN_MER "Principal Meridian" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,PRIN_MER,-1,-1;PIN "PIN" true true false 20 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,PIN,-1,-1;VIEWID "VIEWID" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,VIEWID,-1,-1;Shape.STArea() "Shape.STArea()" false false true 0 Double 0 0 ,First,#;Shape.STLength() "Shape.STLength()" false false true 0 Double 0 0 ,First,#" #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.7\ArcToolbox\Toolboxes\Data Management Tools.tbx\TruncateTable" Date="20190718" Time="214108">TruncateTable "Database Connections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey"</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.7\ArcToolbox\Toolboxes\Data Management Tools.tbx\Append" Date="20190718" Time="214326">Append \\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey "Database Connections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey" NO_TEST "COUNTY_PIN "County PIN" true true false 22 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,COUNTY_PIN,-1,-1;STATE_PIN "State PIN" true true false 28 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,STATE_PIN,-1,-1;ANUMBERPRE "Address Number Prefix" true true false 15 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ANUMBERPRE,-1,-1;ANUMBER "Address Number" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ANUMBER,-1,-1;ANUMBERSUF "Address Number Suffix" true true false 15 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ANUMBERSUF,-1,-1;ST_PRE_MOD "Street Name Pre Modifier" true true false 15 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_PRE_MOD,-1,-1;ST_PRE_DIR "Street Name Pre Directional" true true false 9 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_PRE_DIR,-1,-1;ST_PRE_TYP "Street Name Pre Type" true true false 35 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_PRE_TYP,-1,-1;ST_PRE_SEP "Street Name Pre Separator" true true false 20 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_PRE_SEP,-1,-1;ST_NAME "Street Name" true true false 60 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_NAME,-1,-1;ST_POS_TYP "Street Name Post Type" true true false 15 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_POS_TYP,-1,-1;ST_POS_DIR "Street Name Post Directional" true true false 9 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_POS_DIR,-1,-1;ST_POS_MOD "Street Name Post Modifier" true true false 15 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_POS_MOD,-1,-1;SUB_TYPE1 "Subaddress Type 1" true true false 12 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SUB_TYPE1,-1,-1;SUB_ID1 "Subaddress Identifier 1" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SUB_ID1,-1,-1;SUB_TYPE2 "Subaddress Type 2" true true false 12 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SUB_TYPE2,-1,-1;SUB_ID2 "Subaddress Identifier 2" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SUB_ID2,-1,-1;ZIP "ZIP Code" true true false 5 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ZIP,-1,-1;ZIP4 "ZIP Plus 4
+" true true false 4 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ZIP4,-1,-1;CTU_NAME "CTU Name" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,CTU_NAME,-1,-1;CTU_ID_TXT "CTU Code" true true false 8 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,CTU_ID_TXT,-1,-1;POSTCOMM "Postal Community Name" true true false 40 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,POSTCOMM,-1,-1;CO_CODE "County Code" true true false 5 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,CO_CODE,-1,-1;CO_NAME "County Name" true true false 40 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,CO_NAME,-1,-1;STATE_CODE "State Code" true true false 2 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,STATE_CODE,-1,-1;LOT "Lot" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,LOT,-1,-1;BLOCK "Block" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,BLOCK,-1,-1;PLAT_NAME "Plat Name" true true false 150 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,PLAT_NAME,-1,-1;OWNER_NAME "Owner Name" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWNER_NAME,-1,-1;OWNER_MORE "Owner More Information" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWNER_MORE,-1,-1;OWN_ADD_L1 "Owner Address Line 1" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWN_ADD_L1,-1,-1;OWN_ADD_L2 "Owner Address Line 2" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWN_ADD_L2,-1,-1;OWN_ADD_L3 "Owner Address Line 3" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWN_ADD_L3,-1,-1;OWN_ADD_L4 "Owner Address Line 4" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWN_ADD_L4,-1,-1;TAX_NAME "Taxpayer Name" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_NAME,-1,-1;TAX_ADD_L1 "Taxpayer Address Line 1
+" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_ADD_L1,-1,-1;TAX_ADD_L2 "Taxpayer Address Line 2" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_ADD_L2,-1,-1;TAX_ADD_L3 "Taxpayer Address Line 3" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_ADD_L3,-1,-1;TAX_ADD_L4 "Taxpayer Address Line 4" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_ADD_L4,-1,-1;LANDMARK "Landmark" true true false 150 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,LANDMARK,-1,-1;HOMESTEAD "Homestead Exemption" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,HOMESTEAD,-1,-1;ACRES_POLY "Acres (Polygon)" true true false 8 Double 8 38 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ACRES_POLY,-1,-1;ACRES_DEED "Acres (Deed)" true true false 8 Double 8 38 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ACRES_DEED,-1,-1;EMV_LAND "Estimated Value of Land" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,EMV_LAND,-1,-1;EMV_BLDG "Estimated Value of Building" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,EMV_BLDG,-1,-1;EMV_TOTAL "Estimated Value Total" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,EMV_TOTAL,-1,-1;TAX_YEAR "Tax Year" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_YEAR,-1,-1;MKT_YEAR "Market Year" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,MKT_YEAR,-1,-1;TAX_CAPAC "Tax Capacity" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_CAPAC,-1,-1;TOTAL_TAX "Total Tax" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TOTAL_TAX,-1,-1;SPEC_ASSES "Special Assessment" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SPEC_ASSES,-1,-1;USECLASS1 "Use Classification 1" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,USECLASS1,-1,-1;USECLASS2 "Use Classification 2" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,USECLASS2,-1,-1;USECLASS3 "Use Classification 3" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,USECLASS3,-1,-1;USECLASS4 "Use Classification 4" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,USECLASS4,-1,-1;MULTI_USES "Multiple Uses" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,MULTI_USES,-1,-1;TAX_EXEMPT "Tax Exempt" true true false 3 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_EXEMPT,-1,-1;XUSECLASS1 "Exempt Use Classification 1" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,XUSECLASS1,-1,-1;XUSECLASS2 "Exempt Use Classification 2" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,XUSECLASS2,-1,-1;XUSECLASS3 "Exempt Use Classification 3" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,XUSECLASS3,-1,-1;XUSECLASS4 "Exempt Use Classification 4" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,XUSECLASS4,-1,-1;DWELL_TYPE "Dwelling Type
+" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,DWELL_TYPE,-1,-1;HOME_STYLE "Home Style" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,HOME_STYLE,-1,-1;FIN_SQ_FT "Finished Square Footage
+" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,FIN_SQ_FT,-1,-1;GARAGE "Presence of Garage" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,GARAGE,-1,-1;GARAGESQFT "Square Footage of Garage" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,GARAGESQFT,-1,-1;BASEMENT "Presence of Basement" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,BASEMENT,-1,-1;HEATING "Type of Heating" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,HEATING,-1,-1;COOLING "Type of Cooling" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,COOLING,-1,-1;YEAR_BUILT "Year Built" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,YEAR_BUILT,-1,-1;NUM_UNITS "Number of Residential Units" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,NUM_UNITS,-1,-1;SALE_DATE "Date of Last Sale" true true false 8 Date 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SALE_DATE,-1,-1;SALE_VALUE "Value at Last Sale" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SALE_VALUE,-1,-1;GREEN_ACRE "Green Acres Program" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,GREEN_ACRE,-1,-1;OPEN_SPACE "Open Space" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OPEN_SPACE,-1,-1;AG_PRESERV "Agricultural Preserve" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,AG_PRESERV,-1,-1;AGPRE_ENRD "Agricultural Preserve Enroll Date" true true false 8 Date 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,AGPRE_ENRD,-1,-1;AGPRE_EXPD "Agricultural Preserve Expiration Date" true true false 8 Date 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,AGPRE_EXPD,-1,-1;ABB_LEGAL "Abbreviated Legal Description" true true false 254 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ABB_LEGAL,-1,-1;EDIT_DATE "Edit Date" true true false 8 Date 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,EDIT_DATE,-1,-1;EXP_DATE "Export Date" true true false 8 Date 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,EXP_DATE,-1,-1;POLYPTREL "Polygon to Point Relationship" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,POLYPTREL,-1,-1;N_STANDARD "Non-Standard Parcel Status" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,N_STANDARD,-1,-1;OWNERSHIP "Ownership Category" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWNERSHIP,-1,-1;SCHOOL_DST "School District" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SCHOOL_DST,-1,-1;WSHD_DST "Watershed District" true true false 50 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,WSHD_DST,-1,-1;SECTION "Section" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SECTION,-1,-1;TOWNSHIP "Township" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TOWNSHIP,-1,-1;RANGE "Range" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,RANGE,-1,-1;RANGE_DIR "Range Direction" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,RANGE_DIR,-1,-1;PRIN_MER "Principal Meridian" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,PRIN_MER,-1,-1;PIN "PIN" true true false 20 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,PIN,-1,-1;VIEWID "VIEWID" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,VIEWID,-1,-1;Shape.STArea() "Shape.STArea()" false false true 0 Double 0 0 ,First,#;Shape.STLength() "Shape.STLength()" false false true 0 Double 0 0 ,First,#" #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.7\ArcToolbox\Toolboxes\Data Management Tools.tbx\TruncateTable" Date="20191031" Time="185555">TruncateTable "Database Connections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey"</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.7\ArcToolbox\Toolboxes\Data Management Tools.tbx\Append" Date="20191031" Time="185756">Append \\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey "Database Connections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey" NO_TEST "COUNTY_PIN "County PIN" true true false 22 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,COUNTY_PIN,-1,-1;STATE_PIN "State PIN" true true false 28 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,STATE_PIN,-1,-1;ANUMBERPRE "Address Number Prefix" true true false 15 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ANUMBERPRE,-1,-1;ANUMBER "Address Number" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ANUMBER,-1,-1;ANUMBERSUF "Address Number Suffix" true true false 15 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ANUMBERSUF,-1,-1;ST_PRE_MOD "Street Name Pre Modifier" true true false 15 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_PRE_MOD,-1,-1;ST_PRE_DIR "Street Name Pre Directional" true true false 9 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_PRE_DIR,-1,-1;ST_PRE_TYP "Street Name Pre Type" true true false 35 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_PRE_TYP,-1,-1;ST_PRE_SEP "Street Name Pre Separator" true true false 20 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_PRE_SEP,-1,-1;ST_NAME "Street Name" true true false 60 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_NAME,-1,-1;ST_POS_TYP "Street Name Post Type" true true false 15 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_POS_TYP,-1,-1;ST_POS_DIR "Street Name Post Directional" true true false 9 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_POS_DIR,-1,-1;ST_POS_MOD "Street Name Post Modifier" true true false 15 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ST_POS_MOD,-1,-1;SUB_TYPE1 "Subaddress Type 1" true true false 12 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SUB_TYPE1,-1,-1;SUB_ID1 "Subaddress Identifier 1" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SUB_ID1,-1,-1;SUB_TYPE2 "Subaddress Type 2" true true false 12 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SUB_TYPE2,-1,-1;SUB_ID2 "Subaddress Identifier 2" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SUB_ID2,-1,-1;ZIP "ZIP Code" true true false 5 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ZIP,-1,-1;ZIP4 "ZIP Plus 4
+" true true false 4 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ZIP4,-1,-1;CTU_NAME "CTU Name" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,CTU_NAME,-1,-1;CTU_ID_TXT "CTU Code" true true false 8 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,CTU_ID_TXT,-1,-1;POSTCOMM "Postal Community Name" true true false 40 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,POSTCOMM,-1,-1;CO_CODE "County Code" true true false 5 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,CO_CODE,-1,-1;CO_NAME "County Name" true true false 40 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,CO_NAME,-1,-1;STATE_CODE "State Code" true true false 2 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,STATE_CODE,-1,-1;LOT "Lot" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,LOT,-1,-1;BLOCK "Block" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,BLOCK,-1,-1;PLAT_NAME "Plat Name" true true false 150 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,PLAT_NAME,-1,-1;OWNER_NAME "Owner Name" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWNER_NAME,-1,-1;OWNER_MORE "Owner More Information" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWNER_MORE,-1,-1;OWN_ADD_L1 "Owner Address Line 1" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWN_ADD_L1,-1,-1;OWN_ADD_L2 "Owner Address Line 2" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWN_ADD_L2,-1,-1;OWN_ADD_L3 "Owner Address Line 3" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWN_ADD_L3,-1,-1;OWN_ADD_L4 "Owner Address Line 4" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWN_ADD_L4,-1,-1;TAX_NAME "Taxpayer Name" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_NAME,-1,-1;TAX_ADD_L1 "Taxpayer Address Line 1
+" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_ADD_L1,-1,-1;TAX_ADD_L2 "Taxpayer Address Line 2" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_ADD_L2,-1,-1;TAX_ADD_L3 "Taxpayer Address Line 3" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_ADD_L3,-1,-1;TAX_ADD_L4 "Taxpayer Address Line 4" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_ADD_L4,-1,-1;LANDMARK "Landmark" true true false 150 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,LANDMARK,-1,-1;HOMESTEAD "Homestead Exemption" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,HOMESTEAD,-1,-1;ACRES_POLY "Acres (Polygon)" true true false 8 Double 8 38 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ACRES_POLY,-1,-1;ACRES_DEED "Acres (Deed)" true true false 8 Double 8 38 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ACRES_DEED,-1,-1;EMV_LAND "Estimated Value of Land" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,EMV_LAND,-1,-1;EMV_BLDG "Estimated Value of Building" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,EMV_BLDG,-1,-1;EMV_TOTAL "Estimated Value Total" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,EMV_TOTAL,-1,-1;TAX_YEAR "Tax Year" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_YEAR,-1,-1;MKT_YEAR "Market Year" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,MKT_YEAR,-1,-1;TAX_CAPAC "Tax Capacity" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_CAPAC,-1,-1;TOTAL_TAX "Total Tax" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TOTAL_TAX,-1,-1;SPEC_ASSES "Special Assessment" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SPEC_ASSES,-1,-1;USECLASS1 "Use Classification 1" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,USECLASS1,-1,-1;USECLASS2 "Use Classification 2" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,USECLASS2,-1,-1;USECLASS3 "Use Classification 3" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,USECLASS3,-1,-1;USECLASS4 "Use Classification 4" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,USECLASS4,-1,-1;MULTI_USES "Multiple Uses" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,MULTI_USES,-1,-1;TAX_EXEMPT "Tax Exempt" true true false 3 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TAX_EXEMPT,-1,-1;XUSECLASS1 "Exempt Use Classification 1" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,XUSECLASS1,-1,-1;XUSECLASS2 "Exempt Use Classification 2" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,XUSECLASS2,-1,-1;XUSECLASS3 "Exempt Use Classification 3" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,XUSECLASS3,-1,-1;XUSECLASS4 "Exempt Use Classification 4" true true false 100 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,XUSECLASS4,-1,-1;DWELL_TYPE "Dwelling Type
+" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,DWELL_TYPE,-1,-1;HOME_STYLE "Home Style" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,HOME_STYLE,-1,-1;FIN_SQ_FT "Finished Square Footage
+" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,FIN_SQ_FT,-1,-1;GARAGE "Presence of Garage" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,GARAGE,-1,-1;GARAGESQFT "Square Footage of Garage" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,GARAGESQFT,-1,-1;BASEMENT "Presence of Basement" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,BASEMENT,-1,-1;HEATING "Type of Heating" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,HEATING,-1,-1;COOLING "Type of Cooling" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,COOLING,-1,-1;YEAR_BUILT "Year Built" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,YEAR_BUILT,-1,-1;NUM_UNITS "Number of Residential Units" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,NUM_UNITS,-1,-1;SALE_DATE "Date of Last Sale" true true false 8 Date 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SALE_DATE,-1,-1;SALE_VALUE "Value at Last Sale" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SALE_VALUE,-1,-1;GREEN_ACRE "Green Acres Program" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,GREEN_ACRE,-1,-1;OPEN_SPACE "Open Space" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OPEN_SPACE,-1,-1;AG_PRESERV "Agricultural Preserve" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,AG_PRESERV,-1,-1;AGPRE_ENRD "Agricultural Preserve Enroll Date" true true false 8 Date 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,AGPRE_ENRD,-1,-1;AGPRE_EXPD "Agricultural Preserve Expiration Date" true true false 8 Date 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,AGPRE_EXPD,-1,-1;ABB_LEGAL "Abbreviated Legal Description" true true false 254 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,ABB_LEGAL,-1,-1;EDIT_DATE "Edit Date" true true false 8 Date 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,EDIT_DATE,-1,-1;EXP_DATE "Export Date" true true false 8 Date 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,EXP_DATE,-1,-1;POLYPTREL "Polygon to Point Relationship" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,POLYPTREL,-1,-1;N_STANDARD "Non-Standard Parcel Status" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,N_STANDARD,-1,-1;OWNERSHIP "Ownership Category" true true false 30 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,OWNERSHIP,-1,-1;SCHOOL_DST "School District" true true false 10 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SCHOOL_DST,-1,-1;WSHD_DST "Watershed District" true true false 50 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,WSHD_DST,-1,-1;SECTION "Section" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,SECTION,-1,-1;TOWNSHIP "Township" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,TOWNSHIP,-1,-1;RANGE "Range" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,RANGE,-1,-1;RANGE_DIR "Range Direction" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,RANGE_DIR,-1,-1;PRIN_MER "Principal Meridian" true true false 2 Short 0 5 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,PRIN_MER,-1,-1;PIN "PIN" true true false 20 Text 0 0 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,PIN,-1,-1;VIEWID "VIEWID" true true false 4 Long 0 10 ,First,#,\\rafsshare.mc.local\gis\devel\data_devel\parcels\3_Publish\sde.gdb\ParcelsRamsey,VIEWID,-1,-1;Shape.STArea() "Shape.STArea()" false false true 0 Double 0 0 ,First,#;Shape.STLength() "Shape.STLength()" false false true 0 Double 0 0 ,First,#" #</Process>
+				<Process ToolSource="c:\program files (x86)\arcgis\desktop10.7\ArcToolbox\Toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20191031" Time="193444">FeatureClassToFeatureClass L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey \\rafsshare.mc.local\gis\gis_library\GDRS\STAGE\plan_regional_parcels\fgdb\plan_regional_parcels.gdb ParcelsRamsey # "COUNTY_PIN "County PIN" true true false 22 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,COUNTY_PIN,-1,-1;STATE_PIN "State PIN" true true false 28 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,STATE_PIN,-1,-1;ANUMBERPRE "Address Number Prefix" true true false 15 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ANUMBERPRE,-1,-1;ANUMBER "Address Number" true true false 4 Long 0 10 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ANUMBER,-1,-1;ANUMBERSUF "Address Number Suffix" true true false 15 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ANUMBERSUF,-1,-1;ST_PRE_MOD "Street Name Pre Modifier" true true false 15 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ST_PRE_MOD,-1,-1;ST_PRE_DIR "Street Name Pre Directional" true true false 9 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ST_PRE_DIR,-1,-1;ST_PRE_TYP "Street Name Pre Type" true true false 35 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ST_PRE_TYP,-1,-1;ST_PRE_SEP "Street Name Pre Separator" true true false 20 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ST_PRE_SEP,-1,-1;ST_NAME "Street Name" true true false 60 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ST_NAME,-1,-1;ST_POS_TYP "Street Name Post Type" true true false 15 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ST_POS_TYP,-1,-1;ST_POS_DIR "Street Name Post Directional" true true false 9 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ST_POS_DIR,-1,-1;ST_POS_MOD "Street Name Post Modifier" true true false 15 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ST_POS_MOD,-1,-1;SUB_TYPE1 "Subaddress Type 1" true true false 12 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,SUB_TYPE1,-1,-1;SUB_ID1 "Subaddress Identifier 1" true true false 30 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,SUB_ID1,-1,-1;SUB_TYPE2 "Subaddress Type 2" true true false 12 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,SUB_TYPE2,-1,-1;SUB_ID2 "Subaddress Identifier 2" true true false 30 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,SUB_ID2,-1,-1;ZIP "ZIP Code" true true false 5 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ZIP,-1,-1;ZIP4 "ZIP Plus 4
+" true true false 4 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ZIP4,-1,-1;CTU_NAME "CTU Name" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,CTU_NAME,-1,-1;CTU_ID_TXT "CTU Code" true true false 8 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,CTU_ID_TXT,-1,-1;POSTCOMM "Postal Community Name" true true false 40 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,POSTCOMM,-1,-1;CO_CODE "County Code" true true false 5 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,CO_CODE,-1,-1;CO_NAME "County Name" true true false 40 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,CO_NAME,-1,-1;STATE_CODE "State Code" true true false 2 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,STATE_CODE,-1,-1;LOT "Lot" true true false 30 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,LOT,-1,-1;BLOCK "Block" true true false 30 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,BLOCK,-1,-1;PLAT_NAME "Plat Name" true true false 150 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,PLAT_NAME,-1,-1;OWNER_NAME "Owner Name" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,OWNER_NAME,-1,-1;OWNER_MORE "Owner More Information" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,OWNER_MORE,-1,-1;OWN_ADD_L1 "Owner Address Line 1" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,OWN_ADD_L1,-1,-1;OWN_ADD_L2 "Owner Address Line 2" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,OWN_ADD_L2,-1,-1;OWN_ADD_L3 "Owner Address Line 3" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,OWN_ADD_L3,-1,-1;OWN_ADD_L4 "Owner Address Line 4" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,OWN_ADD_L4,-1,-1;TAX_NAME "Taxpayer Name" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,TAX_NAME,-1,-1;TAX_ADD_L1 "Taxpayer Address Line 1
+" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,TAX_ADD_L1,-1,-1;TAX_ADD_L2 "Taxpayer Address Line 2" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,TAX_ADD_L2,-1,-1;TAX_ADD_L3 "Taxpayer Address Line 3" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,TAX_ADD_L3,-1,-1;TAX_ADD_L4 "Taxpayer Address Line 4" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,TAX_ADD_L4,-1,-1;LANDMARK "Landmark" true true false 150 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,LANDMARK,-1,-1;HOMESTEAD "Homestead Exemption" true true false 10 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,HOMESTEAD,-1,-1;ACRES_POLY "Acres (Polygon)" true true false 8 Double 8 38 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ACRES_POLY,-1,-1;ACRES_DEED "Acres (Deed)" true true false 8 Double 8 38 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ACRES_DEED,-1,-1;EMV_LAND "Estimated Value of Land" true true false 4 Long 0 10 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,EMV_LAND,-1,-1;EMV_BLDG "Estimated Value of Building" true true false 4 Long 0 10 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,EMV_BLDG,-1,-1;EMV_TOTAL "Estimated Value Total" true true false 4 Long 0 10 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,EMV_TOTAL,-1,-1;TAX_YEAR "Tax Year" true true false 2 Short 0 5 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,TAX_YEAR,-1,-1;MKT_YEAR "Market Year" true true false 2 Short 0 5 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,MKT_YEAR,-1,-1;TAX_CAPAC "Tax Capacity" true true false 4 Long 0 10 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,TAX_CAPAC,-1,-1;TOTAL_TAX "Total Tax" true true false 4 Long 0 10 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,TOTAL_TAX,-1,-1;SPEC_ASSES "Special Assessment" true true false 4 Long 0 10 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,SPEC_ASSES,-1,-1;USECLASS1 "Use Classification 1" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,USECLASS1,-1,-1;USECLASS2 "Use Classification 2" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,USECLASS2,-1,-1;USECLASS3 "Use Classification 3" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,USECLASS3,-1,-1;USECLASS4 "Use Classification 4" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,USECLASS4,-1,-1;MULTI_USES "Multiple Uses" true true false 10 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,MULTI_USES,-1,-1;TAX_EXEMPT "Tax Exempt" true true false 3 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,TAX_EXEMPT,-1,-1;XUSECLASS1 "Exempt Use Classification 1" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,XUSECLASS1,-1,-1;XUSECLASS2 "Exempt Use Classification 2" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,XUSECLASS2,-1,-1;XUSECLASS3 "Exempt Use Classification 3" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,XUSECLASS3,-1,-1;XUSECLASS4 "Exempt Use Classification 4" true true false 100 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,XUSECLASS4,-1,-1;DWELL_TYPE "Dwelling Type
+" true true false 30 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,DWELL_TYPE,-1,-1;HOME_STYLE "Home Style" true true false 30 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,HOME_STYLE,-1,-1;FIN_SQ_FT "Finished Square Footage
+" true true false 4 Long 0 10 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,FIN_SQ_FT,-1,-1;GARAGE "Presence of Garage" true true false 10 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,GARAGE,-1,-1;GARAGESQFT "Square Footage of Garage" true true false 4 Long 0 10 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,GARAGESQFT,-1,-1;BASEMENT "Presence of Basement" true true false 10 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,BASEMENT,-1,-1;HEATING "Type of Heating" true true false 30 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,HEATING,-1,-1;COOLING "Type of Cooling" true true false 30 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,COOLING,-1,-1;YEAR_BUILT "Year Built" true true false 2 Short 0 5 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,YEAR_BUILT,-1,-1;NUM_UNITS "Number of Residential Units" true true false 4 Long 0 10 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,NUM_UNITS,-1,-1;SALE_DATE "Date of Last Sale" true true false 8 Date 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,SALE_DATE,-1,-1;SALE_VALUE "Value at Last Sale" true true false 4 Long 0 10 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,SALE_VALUE,-1,-1;GREEN_ACRE "Green Acres Program" true true false 10 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,GREEN_ACRE,-1,-1;OPEN_SPACE "Open Space" true true false 10 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,OPEN_SPACE,-1,-1;AG_PRESERV "Agricultural Preserve" true true false 10 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,AG_PRESERV,-1,-1;AGPRE_ENRD "Agricultural Preserve Enroll Date" true true false 8 Date 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,AGPRE_ENRD,-1,-1;AGPRE_EXPD "Agricultural Preserve Expiration Date" true true false 8 Date 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,AGPRE_EXPD,-1,-1;ABB_LEGAL "Abbreviated Legal Description" true true false 254 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,ABB_LEGAL,-1,-1;EDIT_DATE "Edit Date" true true false 8 Date 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,EDIT_DATE,-1,-1;EXP_DATE "Export Date" true true false 8 Date 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,EXP_DATE,-1,-1;POLYPTREL "Polygon to Point Relationship" true true false 2 Short 0 5 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,POLYPTREL,-1,-1;N_STANDARD "Non-Standard Parcel Status" true true false 2 Short 0 5 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,N_STANDARD,-1,-1;OWNERSHIP "Ownership Category" true true false 30 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,OWNERSHIP,-1,-1;SCHOOL_DST "School District" true true false 10 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,SCHOOL_DST,-1,-1;WSHD_DST "Watershed District" true true false 50 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,WSHD_DST,-1,-1;SECTION "Section" true true false 2 Short 0 5 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,SECTION,-1,-1;TOWNSHIP "Township" true true false 2 Short 0 5 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,TOWNSHIP,-1,-1;RANGE "Range" true true false 2 Short 0 5 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,RANGE,-1,-1;RANGE_DIR "Range Direction" true true false 2 Short 0 5 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,RANGE_DIR,-1,-1;PRIN_MER "Principal Meridian" true true false 2 Short 0 5 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,PRIN_MER,-1,-1;PIN "PIN" true true false 20 Text 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,PIN,-1,-1;VIEWID "VIEWID" true true false 4 Long 0 10 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,VIEWID,-1,-1;Shape_STArea__ "Shape_STArea__" false false true 0 Double 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,Shape.STArea(),-1,-1;Shape_STLength__ "Shape_STLength__" false false true 0 Double 0 0 ,First,#,L:\Resources\DatabaseConnections\SDE@GISLibrary.sde\GISLibrary.DBO.Parcels\GISLibrary.DBO.ParcelsRamsey,Shape.STLength(),-1,-1" #</Process>
+				<Process ToolSource="C:\program files\arcgis\server\ArcToolbox\Toolboxes\Conversion Tools.tbx\FeatureClassToFeatureClass" Date="20191101" Time="012801">FeatureClassToFeatureClass /var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey /var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\shp ParcelsRamsey.shp # "COUNTY_PIN "County PIN" true true false 22 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,COUNTY_PIN,-1,-1;STATE_PIN "State PIN" true true false 28 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,STATE_PIN,-1,-1;ANUMBERPRE "Address Number Prefix" true true false 15 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ANUMBERPRE,-1,-1;ANUMBER "Address Number" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ANUMBER,-1,-1;ANUMBERSUF "Address Number Suffix" true true false 15 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ANUMBERSUF,-1,-1;ST_PRE_MOD "Street Name Pre Modifier" true true false 15 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ST_PRE_MOD,-1,-1;ST_PRE_DIR "Street Name Pre Directional" true true false 9 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ST_PRE_DIR,-1,-1;ST_PRE_TYP "Street Name Pre Type" true true false 35 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ST_PRE_TYP,-1,-1;ST_PRE_SEP "Street Name Pre Separator" true true false 20 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ST_PRE_SEP,-1,-1;ST_NAME "Street Name" true true false 60 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ST_NAME,-1,-1;ST_POS_TYP "Street Name Post Type" true true false 15 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ST_POS_TYP,-1,-1;ST_POS_DIR "Street Name Post Directional" true true false 9 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ST_POS_DIR,-1,-1;ST_POS_MOD "Street Name Post Modifier" true true false 15 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ST_POS_MOD,-1,-1;SUB_TYPE1 "Subaddress Type 1" true true false 12 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,SUB_TYPE1,-1,-1;SUB_ID1 "Subaddress Identifier 1" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,SUB_ID1,-1,-1;SUB_TYPE2 "Subaddress Type 2" true true false 12 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,SUB_TYPE2,-1,-1;SUB_ID2 "Subaddress Identifier 2" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,SUB_ID2,-1,-1;ZIP "ZIP Code" true true false 5 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ZIP,-1,-1;ZIP4 "ZIP Plus 4
+" true true false 4 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ZIP4,-1,-1;CTU_NAME "CTU Name" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,CTU_NAME,-1,-1;CTU_ID_TXT "CTU Code" true true false 8 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,CTU_ID_TXT,-1,-1;POSTCOMM "Postal Community Name" true true false 40 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,POSTCOMM,-1,-1;CO_CODE "County Code" true true false 5 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,CO_CODE,-1,-1;CO_NAME "County Name" true true false 40 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,CO_NAME,-1,-1;STATE_CODE "State Code" true true false 2 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,STATE_CODE,-1,-1;LOT "Lot" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,LOT,-1,-1;BLOCK "Block" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,BLOCK,-1,-1;PLAT_NAME "Plat Name" true true false 150 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,PLAT_NAME,-1,-1;OWNER_NAME "Owner Name" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,OWNER_NAME,-1,-1;OWNER_MORE "Owner More Information" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,OWNER_MORE,-1,-1;OWN_ADD_L1 "Owner Address Line 1" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,OWN_ADD_L1,-1,-1;OWN_ADD_L2 "Owner Address Line 2" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,OWN_ADD_L2,-1,-1;OWN_ADD_L3 "Owner Address Line 3" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,OWN_ADD_L3,-1,-1;OWN_ADD_L4 "Owner Address Line 4" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,OWN_ADD_L4,-1,-1;TAX_NAME "Taxpayer Name" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,TAX_NAME,-1,-1;TAX_ADD_L1 "Taxpayer Address Line 1
+" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,TAX_ADD_L1,-1,-1;TAX_ADD_L2 "Taxpayer Address Line 2" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,TAX_ADD_L2,-1,-1;TAX_ADD_L3 "Taxpayer Address Line 3" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,TAX_ADD_L3,-1,-1;TAX_ADD_L4 "Taxpayer Address Line 4" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,TAX_ADD_L4,-1,-1;LANDMARK "Landmark" true true false 150 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,LANDMARK,-1,-1;HOMESTEAD "Homestead Exemption" true true false 10 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,HOMESTEAD,-1,-1;ACRES_POLY "Acres (Polygon)" true true false 8 Double 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ACRES_POLY,-1,-1;ACRES_DEED "Acres (Deed)" true true false 8 Double 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ACRES_DEED,-1,-1;EMV_LAND "Estimated Value of Land" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,EMV_LAND,-1,-1;EMV_BLDG "Estimated Value of Building" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,EMV_BLDG,-1,-1;EMV_TOTAL "Estimated Value Total" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,EMV_TOTAL,-1,-1;TAX_YEAR "Tax Year" true true false 2 Short 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,TAX_YEAR,-1,-1;MKT_YEAR "Market Year" true true false 2 Short 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,MKT_YEAR,-1,-1;TAX_CAPAC "Tax Capacity" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,TAX_CAPAC,-1,-1;TOTAL_TAX "Total Tax" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,TOTAL_TAX,-1,-1;SPEC_ASSES "Special Assessment" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,SPEC_ASSES,-1,-1;USECLASS1 "Use Classification 1" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,USECLASS1,-1,-1;USECLASS2 "Use Classification 2" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,USECLASS2,-1,-1;USECLASS3 "Use Classification 3" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,USECLASS3,-1,-1;USECLASS4 "Use Classification 4" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,USECLASS4,-1,-1;MULTI_USES "Multiple Uses" true true false 10 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,MULTI_USES,-1,-1;TAX_EXEMPT "Tax Exempt" true true false 3 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,TAX_EXEMPT,-1,-1;XUSECLASS1 "Exempt Use Classification 1" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,XUSECLASS1,-1,-1;XUSECLASS2 "Exempt Use Classification 2" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,XUSECLASS2,-1,-1;XUSECLASS3 "Exempt Use Classification 3" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,XUSECLASS3,-1,-1;XUSECLASS4 "Exempt Use Classification 4" true true false 100 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,XUSECLASS4,-1,-1;DWELL_TYPE "Dwelling Type
+" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,DWELL_TYPE,-1,-1;HOME_STYLE "Home Style" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,HOME_STYLE,-1,-1;FIN_SQ_FT "Finished Square Footage
+" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,FIN_SQ_FT,-1,-1;GARAGE "Presence of Garage" true true false 10 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,GARAGE,-1,-1;GARAGESQFT "Square Footage of Garage" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,GARAGESQFT,-1,-1;BASEMENT "Presence of Basement" true true false 10 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,BASEMENT,-1,-1;HEATING "Type of Heating" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,HEATING,-1,-1;COOLING "Type of Cooling" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,COOLING,-1,-1;YEAR_BUILT "Year Built" true true false 2 Short 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,YEAR_BUILT,-1,-1;NUM_UNITS "Number of Residential Units" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,NUM_UNITS,-1,-1;SALE_DATE "Date of Last Sale" true true false 8 Date 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,SALE_DATE,-1,-1;SALE_VALUE "Value at Last Sale" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,SALE_VALUE,-1,-1;GREEN_ACRE "Green Acres Program" true true false 10 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,GREEN_ACRE,-1,-1;OPEN_SPACE "Open Space" true true false 10 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,OPEN_SPACE,-1,-1;AG_PRESERV "Agricultural Preserve" true true false 10 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,AG_PRESERV,-1,-1;AGPRE_ENRD "Agricultural Preserve Enroll Date" true true false 8 Date 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,AGPRE_ENRD,-1,-1;AGPRE_EXPD "Agricultural Preserve Expiration Date" true true false 8 Date 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,AGPRE_EXPD,-1,-1;ABB_LEGAL "Abbreviated Legal Description" true true false 254 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,ABB_LEGAL,-1,-1;EDIT_DATE "Edit Date" true true false 8 Date 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,EDIT_DATE,-1,-1;EXP_DATE "Export Date" true true false 8 Date 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,EXP_DATE,-1,-1;POLYPTREL "Polygon to Point Relationship" true true false 2 Short 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,POLYPTREL,-1,-1;N_STANDARD "Non-Standard Parcel Status" true true false 2 Short 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,N_STANDARD,-1,-1;OWNERSHIP "Ownership Category" true true false 30 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,OWNERSHIP,-1,-1;SCHOOL_DST "School District" true true false 10 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,SCHOOL_DST,-1,-1;WSHD_DST "Watershed District" true true false 50 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,WSHD_DST,-1,-1;SECTION "Section" true true false 2 Short 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,SECTION,-1,-1;TOWNSHIP "Township" true true false 2 Short 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,TOWNSHIP,-1,-1;RANGE "Range" true true false 2 Short 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,RANGE,-1,-1;RANGE_DIR "Range Direction" true true false 2 Short 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,RANGE_DIR,-1,-1;PRIN_MER "Principal Meridian" true true false 2 Short 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,PRIN_MER,-1,-1;PIN "PIN" true true false 20 Text 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,PIN,-1,-1;VIEWID "VIEWID" true true false 4 Long 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,VIEWID,-1,-1;Shape_Leng "Shape_Leng" false true true 8 Double 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,Shape_Length,-1,-1;Shape_Area "Shape_Area" false true true 8 Double 0 0 ,First,#,/var/ftp/gdrs_temp/update\us_mn_state_metrogis\plan_regional_parcels\fgdb\plan_regional_parcels.gdb\ParcelsRamsey,Shape_Area,-1,-1" #</Process>
+			</lineage>
+			<itemProps>
+				<itemName Sync="TRUE">ParcelsRamsey</itemName>
+				<imsContentType Sync="TRUE">002</imsContentType>
+				<itemLocation>
+					<linkage Sync="TRUE">file://\\g46palgdrftp001\Z\var\ftp\gdrs_temp\update\us_mn_state_metrogis\plan_regional_parcels\shp\ParcelsRamsey.shp</linkage>
+					<protocol Sync="TRUE">Local Area Network</protocol>
+				</itemLocation>
+				<itemSize Sync="TRUE">0.000</itemSize>
+			</itemProps>
+			<coordRef>
+				<type Sync="TRUE">Projected</type>
+				<geogcsn Sync="TRUE">GCS_North_American_1983</geogcsn>
+				<csUnits Sync="TRUE">Linear Unit: Meter (1.000000)</csUnits>
+				<projcsn Sync="TRUE">NAD_1983_UTM_Zone_15N</projcsn>
+				<peXml Sync="TRUE">&lt;ProjectedCoordinateSystem xsi:type='typens:ProjectedCoordinateSystem' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xs='http://www.w3.org/2001/XMLSchema' xmlns:typens='http://www.esri.com/schemas/ArcGIS/10.4'&gt;&lt;WKT&gt;PROJCS[&amp;quot;NAD_1983_UTM_Zone_15N&amp;quot;,GEOGCS[&amp;quot;GCS_North_American_1983&amp;quot;,DATUM[&amp;quot;D_North_American_1983&amp;quot;,SPHEROID[&amp;quot;GRS_1980&amp;quot;,6378137.0,298.257222101]],PRIMEM[&amp;quot;Greenwich&amp;quot;,0.0],UNIT[&amp;quot;Degree&amp;quot;,0.0174532925199433]],PROJECTION[&amp;quot;Transverse_Mercator&amp;quot;],PARAMETER[&amp;quot;False_Easting&amp;quot;,500000.0],PARAMETER[&amp;quot;False_Northing&amp;quot;,0.0],PARAMETER[&amp;quot;Central_Meridian&amp;quot;,-93.0],PARAMETER[&amp;quot;Scale_Factor&amp;quot;,0.9996],PARAMETER[&amp;quot;Latitude_Of_Origin&amp;quot;,0.0],UNIT[&amp;quot;Meter&amp;quot;,1.0],AUTHORITY[&amp;quot;EPSG&amp;quot;,26915]]&lt;/WKT&gt;&lt;XOrigin&gt;-5120900&lt;/XOrigin&gt;&lt;YOrigin&gt;-9998100&lt;/YOrigin&gt;&lt;XYScale&gt;450445547.3910538&lt;/XYScale&gt;&lt;ZOrigin&gt;-100000&lt;/ZOrigin&gt;&lt;ZScale&gt;10000&lt;/ZScale&gt;&lt;MOrigin&gt;-100000&lt;/MOrigin&gt;&lt;MScale&gt;10000&lt;/MScale&gt;&lt;XYTolerance&gt;0.001&lt;/XYTolerance&gt;&lt;ZTolerance&gt;0.001&lt;/ZTolerance&gt;&lt;MTolerance&gt;0.001&lt;/MTolerance&gt;&lt;HighPrecision&gt;true&lt;/HighPrecision&gt;&lt;WKID&gt;26915&lt;/WKID&gt;&lt;LatestWKID&gt;26915&lt;/LatestWKID&gt;&lt;/ProjectedCoordinateSystem&gt;</peXml>
+			</coordRef>
+		</DataProperties>
+		<SyncDate>20191101</SyncDate>
+		<SyncTime>01271000</SyncTime>
+		<ModDate>20191101</ModDate>
+		<ModTime>01271000</ModTime>
+	</Esri>
+	<dataIdInfo>
+		<envirDesc Sync="TRUE">Microsoft Windows XP Professional x64 Edition Version 5.2 (Build 3790) Service Pack 2; Esri ArcGIS 10.4.1.5686</envirDesc>
+		<dataLang>
+			<languageCode value="en" Sync="TRUE"/>
+			<countryCode value="US" Sync="TRUE"/>
+		</dataLang>
+		<idCitation>
+			<resTitle Sync="TRUE">ParcelsRamsey</resTitle>
+			<presForm>
+				<PresFormCd value="005" Sync="TRUE"/>
+			</presForm>
+		</idCitation>
+		<spatRpType>
+			<SpatRepTypCd value="001" Sync="TRUE"/>
+		</spatRpType>
+	</dataIdInfo>
+	<mdLang>
+		<languageCode value="en" Sync="TRUE"/>
+		<countryCode value="US" Sync="TRUE"/>
+	</mdLang>
+	<distInfo>
+		<distFormat>
+			<formatName Sync="TRUE">Shapefile</formatName>
+		</distFormat>
+		<distTranOps>
+			<transSize Sync="TRUE">0.000</transSize>
+		</distTranOps>
+	</distInfo>
+	<mdHrLv>
+		<ScopeCd value="005" Sync="TRUE"/>
+	</mdHrLv>
+	<mdHrLvName Sync="TRUE">dataset</mdHrLvName>
+	<refSysInfo>
+		<RefSystem>
+			<refSysID>
+				<identCode code="26915" Sync="TRUE"/>
+				<idCodeSpace Sync="TRUE">EPSG</idCodeSpace>
+				<idVersion Sync="TRUE">6.13(3.0.1)</idVersion>
+			</refSysID>
+		</RefSystem>
+	</refSysInfo>
+	<spatRepInfo>
+		<VectSpatRep>
+			<geometObjs Name="ParcelsRamsey">
+				<geoObjTyp>
+					<GeoObjTypCd value="002" Sync="TRUE"/>
+				</geoObjTyp>
+				<geoObjCnt Sync="TRUE">0</geoObjCnt>
+			</geometObjs>
+			<topLvl>
+				<TopoLevCd value="001" Sync="TRUE"/>
+			</topLvl>
+		</VectSpatRep>
+	</spatRepInfo>
+	<spdoinfo>
+		<ptvctinf>
+			<esriterm Name="ParcelsRamsey">
+				<efeatyp Sync="TRUE">Simple</efeatyp>
+				<efeageom code="4" Sync="TRUE"/>
+				<esritopo Sync="TRUE">FALSE</esritopo>
+				<efeacnt Sync="TRUE">0</efeacnt>
+				<spindex Sync="TRUE">FALSE</spindex>
+				<linrefer Sync="TRUE">FALSE</linrefer>
+			</esriterm>
+		</ptvctinf>
+	</spdoinfo>
+	<eainfo>
+		<detailed Name="ParcelsRamsey">
+			<enttyp>
+				<enttypl Sync="TRUE">ParcelsRamsey</enttypl>
+				<enttypt Sync="TRUE">Feature Class</enttypt>
+				<enttypc Sync="TRUE">0</enttypc>
+			</enttyp>
+			<attr>
+				<attrlabl Sync="TRUE">FID</attrlabl>
+				<attalias Sync="TRUE">FID</attalias>
+				<attrtype Sync="TRUE">OID</attrtype>
+				<attwidth Sync="TRUE">4</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+				<attrdef Sync="TRUE">Internal feature number.</attrdef>
+				<attrdefs Sync="TRUE">Esri</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Sequential unique whole numbers that are automatically generated.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape</attrlabl>
+				<attalias Sync="TRUE">Shape</attalias>
+				<attrtype Sync="TRUE">Geometry</attrtype>
+				<attwidth Sync="TRUE">0</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+				<attrdef Sync="TRUE">Feature geometry.</attrdef>
+				<attrdefs Sync="TRUE">Esri</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Coordinates defining the features.</udom>
+				</attrdomv>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">COUNTY_PIN</attrlabl>
+				<attalias Sync="TRUE">COUNTY_PIN</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">22</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">STATE_PIN</attrlabl>
+				<attalias Sync="TRUE">STATE_PIN</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">28</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ANUMBERPRE</attrlabl>
+				<attalias Sync="TRUE">ANUMBERPRE</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">15</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ANUMBER</attrlabl>
+				<attalias Sync="TRUE">ANUMBER</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ANUMBERSUF</attrlabl>
+				<attalias Sync="TRUE">ANUMBERSUF</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">15</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ST_PRE_MOD</attrlabl>
+				<attalias Sync="TRUE">ST_PRE_MOD</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">15</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ST_PRE_DIR</attrlabl>
+				<attalias Sync="TRUE">ST_PRE_DIR</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">9</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ST_PRE_TYP</attrlabl>
+				<attalias Sync="TRUE">ST_PRE_TYP</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">35</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ST_PRE_SEP</attrlabl>
+				<attalias Sync="TRUE">ST_PRE_SEP</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">20</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ST_NAME</attrlabl>
+				<attalias Sync="TRUE">ST_NAME</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">60</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ST_POS_TYP</attrlabl>
+				<attalias Sync="TRUE">ST_POS_TYP</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">15</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ST_POS_DIR</attrlabl>
+				<attalias Sync="TRUE">ST_POS_DIR</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">9</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ST_POS_MOD</attrlabl>
+				<attalias Sync="TRUE">ST_POS_MOD</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">15</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">SUB_TYPE1</attrlabl>
+				<attalias Sync="TRUE">SUB_TYPE1</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">12</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">SUB_ID1</attrlabl>
+				<attalias Sync="TRUE">SUB_ID1</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">SUB_TYPE2</attrlabl>
+				<attalias Sync="TRUE">SUB_TYPE2</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">12</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">SUB_ID2</attrlabl>
+				<attalias Sync="TRUE">SUB_ID2</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ZIP</attrlabl>
+				<attalias Sync="TRUE">ZIP</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">5</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ZIP4</attrlabl>
+				<attalias Sync="TRUE">ZIP4</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">4</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CTU_NAME</attrlabl>
+				<attalias Sync="TRUE">CTU_NAME</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CTU_ID_TXT</attrlabl>
+				<attalias Sync="TRUE">CTU_ID_TXT</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">8</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">POSTCOMM</attrlabl>
+				<attalias Sync="TRUE">POSTCOMM</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">40</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CO_CODE</attrlabl>
+				<attalias Sync="TRUE">CO_CODE</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">5</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">CO_NAME</attrlabl>
+				<attalias Sync="TRUE">CO_NAME</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">40</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">STATE_CODE</attrlabl>
+				<attalias Sync="TRUE">STATE_CODE</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">2</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">LOT</attrlabl>
+				<attalias Sync="TRUE">LOT</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">BLOCK</attrlabl>
+				<attalias Sync="TRUE">BLOCK</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PLAT_NAME</attrlabl>
+				<attalias Sync="TRUE">PLAT_NAME</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">150</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">OWNER_NAME</attrlabl>
+				<attalias Sync="TRUE">OWNER_NAME</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">OWNER_MORE</attrlabl>
+				<attalias Sync="TRUE">OWNER_MORE</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">OWN_ADD_L1</attrlabl>
+				<attalias Sync="TRUE">OWN_ADD_L1</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">OWN_ADD_L2</attrlabl>
+				<attalias Sync="TRUE">OWN_ADD_L2</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">OWN_ADD_L3</attrlabl>
+				<attalias Sync="TRUE">OWN_ADD_L3</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">OWN_ADD_L4</attrlabl>
+				<attalias Sync="TRUE">OWN_ADD_L4</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">TAX_NAME</attrlabl>
+				<attalias Sync="TRUE">TAX_NAME</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">TAX_ADD_L1</attrlabl>
+				<attalias Sync="TRUE">TAX_ADD_L1</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">TAX_ADD_L2</attrlabl>
+				<attalias Sync="TRUE">TAX_ADD_L2</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">TAX_ADD_L3</attrlabl>
+				<attalias Sync="TRUE">TAX_ADD_L3</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">TAX_ADD_L4</attrlabl>
+				<attalias Sync="TRUE">TAX_ADD_L4</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">LANDMARK</attrlabl>
+				<attalias Sync="TRUE">LANDMARK</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">150</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">HOMESTEAD</attrlabl>
+				<attalias Sync="TRUE">HOMESTEAD</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ACRES_POLY</attrlabl>
+				<attalias Sync="TRUE">ACRES_POLY</attalias>
+				<attrtype Sync="TRUE">Double</attrtype>
+				<attwidth Sync="TRUE">19</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ACRES_DEED</attrlabl>
+				<attalias Sync="TRUE">ACRES_DEED</attalias>
+				<attrtype Sync="TRUE">Double</attrtype>
+				<attwidth Sync="TRUE">19</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">EMV_LAND</attrlabl>
+				<attalias Sync="TRUE">EMV_LAND</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">EMV_BLDG</attrlabl>
+				<attalias Sync="TRUE">EMV_BLDG</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">EMV_TOTAL</attrlabl>
+				<attalias Sync="TRUE">EMV_TOTAL</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">TAX_YEAR</attrlabl>
+				<attalias Sync="TRUE">TAX_YEAR</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">5</attwidth>
+				<atprecis Sync="TRUE">5</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">MKT_YEAR</attrlabl>
+				<attalias Sync="TRUE">MKT_YEAR</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">5</attwidth>
+				<atprecis Sync="TRUE">5</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">TAX_CAPAC</attrlabl>
+				<attalias Sync="TRUE">TAX_CAPAC</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">TOTAL_TAX</attrlabl>
+				<attalias Sync="TRUE">TOTAL_TAX</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">SPEC_ASSES</attrlabl>
+				<attalias Sync="TRUE">SPEC_ASSES</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">USECLASS1</attrlabl>
+				<attalias Sync="TRUE">USECLASS1</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">USECLASS2</attrlabl>
+				<attalias Sync="TRUE">USECLASS2</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">USECLASS3</attrlabl>
+				<attalias Sync="TRUE">USECLASS3</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">USECLASS4</attrlabl>
+				<attalias Sync="TRUE">USECLASS4</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">MULTI_USES</attrlabl>
+				<attalias Sync="TRUE">MULTI_USES</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">TAX_EXEMPT</attrlabl>
+				<attalias Sync="TRUE">TAX_EXEMPT</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">3</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">XUSECLASS1</attrlabl>
+				<attalias Sync="TRUE">XUSECLASS1</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">XUSECLASS2</attrlabl>
+				<attalias Sync="TRUE">XUSECLASS2</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">XUSECLASS3</attrlabl>
+				<attalias Sync="TRUE">XUSECLASS3</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">XUSECLASS4</attrlabl>
+				<attalias Sync="TRUE">XUSECLASS4</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">100</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">DWELL_TYPE</attrlabl>
+				<attalias Sync="TRUE">DWELL_TYPE</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">HOME_STYLE</attrlabl>
+				<attalias Sync="TRUE">HOME_STYLE</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">FIN_SQ_FT</attrlabl>
+				<attalias Sync="TRUE">FIN_SQ_FT</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">GARAGE</attrlabl>
+				<attalias Sync="TRUE">GARAGE</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">GARAGESQFT</attrlabl>
+				<attalias Sync="TRUE">GARAGESQFT</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">BASEMENT</attrlabl>
+				<attalias Sync="TRUE">BASEMENT</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">HEATING</attrlabl>
+				<attalias Sync="TRUE">HEATING</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">COOLING</attrlabl>
+				<attalias Sync="TRUE">COOLING</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">YEAR_BUILT</attrlabl>
+				<attalias Sync="TRUE">YEAR_BUILT</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">5</attwidth>
+				<atprecis Sync="TRUE">5</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">NUM_UNITS</attrlabl>
+				<attalias Sync="TRUE">NUM_UNITS</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">SALE_DATE</attrlabl>
+				<attalias Sync="TRUE">SALE_DATE</attalias>
+				<attrtype Sync="TRUE">Date</attrtype>
+				<attwidth Sync="TRUE">8</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">SALE_VALUE</attrlabl>
+				<attalias Sync="TRUE">SALE_VALUE</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">GREEN_ACRE</attrlabl>
+				<attalias Sync="TRUE">GREEN_ACRE</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">OPEN_SPACE</attrlabl>
+				<attalias Sync="TRUE">OPEN_SPACE</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">AG_PRESERV</attrlabl>
+				<attalias Sync="TRUE">AG_PRESERV</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">AGPRE_ENRD</attrlabl>
+				<attalias Sync="TRUE">AGPRE_ENRD</attalias>
+				<attrtype Sync="TRUE">Date</attrtype>
+				<attwidth Sync="TRUE">8</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">AGPRE_EXPD</attrlabl>
+				<attalias Sync="TRUE">AGPRE_EXPD</attalias>
+				<attrtype Sync="TRUE">Date</attrtype>
+				<attwidth Sync="TRUE">8</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">ABB_LEGAL</attrlabl>
+				<attalias Sync="TRUE">ABB_LEGAL</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">254</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">EDIT_DATE</attrlabl>
+				<attalias Sync="TRUE">EDIT_DATE</attalias>
+				<attrtype Sync="TRUE">Date</attrtype>
+				<attwidth Sync="TRUE">8</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">EXP_DATE</attrlabl>
+				<attalias Sync="TRUE">EXP_DATE</attalias>
+				<attrtype Sync="TRUE">Date</attrtype>
+				<attwidth Sync="TRUE">8</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">POLYPTREL</attrlabl>
+				<attalias Sync="TRUE">POLYPTREL</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">5</attwidth>
+				<atprecis Sync="TRUE">5</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">N_STANDARD</attrlabl>
+				<attalias Sync="TRUE">N_STANDARD</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">5</attwidth>
+				<atprecis Sync="TRUE">5</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">OWNERSHIP</attrlabl>
+				<attalias Sync="TRUE">OWNERSHIP</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">30</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">SCHOOL_DST</attrlabl>
+				<attalias Sync="TRUE">SCHOOL_DST</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">WSHD_DST</attrlabl>
+				<attalias Sync="TRUE">WSHD_DST</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">50</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">SECTION</attrlabl>
+				<attalias Sync="TRUE">SECTION</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">5</attwidth>
+				<atprecis Sync="TRUE">5</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">TOWNSHIP</attrlabl>
+				<attalias Sync="TRUE">TOWNSHIP</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">5</attwidth>
+				<atprecis Sync="TRUE">5</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">RANGE</attrlabl>
+				<attalias Sync="TRUE">RANGE</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">5</attwidth>
+				<atprecis Sync="TRUE">5</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">RANGE_DIR</attrlabl>
+				<attalias Sync="TRUE">RANGE_DIR</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">5</attwidth>
+				<atprecis Sync="TRUE">5</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PRIN_MER</attrlabl>
+				<attalias Sync="TRUE">PRIN_MER</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">5</attwidth>
+				<atprecis Sync="TRUE">5</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">PIN</attrlabl>
+				<attalias Sync="TRUE">PIN</attalias>
+				<attrtype Sync="TRUE">String</attrtype>
+				<attwidth Sync="TRUE">20</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">VIEWID</attrlabl>
+				<attalias Sync="TRUE">VIEWID</attalias>
+				<attrtype Sync="TRUE">Integer</attrtype>
+				<attwidth Sync="TRUE">10</attwidth>
+				<atprecis Sync="TRUE">10</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape_Leng</attrlabl>
+				<attalias Sync="TRUE">Shape_Leng</attalias>
+				<attrtype Sync="TRUE">Double</attrtype>
+				<attwidth Sync="TRUE">19</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+			</attr>
+			<attr>
+				<attrlabl Sync="TRUE">Shape_Area</attrlabl>
+				<attalias Sync="TRUE">Shape_Area</attalias>
+				<attrtype Sync="TRUE">Double</attrtype>
+				<attwidth Sync="TRUE">19</attwidth>
+				<atprecis Sync="TRUE">0</atprecis>
+				<attscale Sync="TRUE">0</attscale>
+				<attrdef Sync="TRUE">Area of feature in internal units squared.</attrdef>
+				<attrdefs Sync="TRUE">Esri</attrdefs>
+				<attrdomv>
+					<udom Sync="TRUE">Positive real numbers that are automatically generated.</udom>
+				</attrdomv>
+			</attr>
+		</detailed>
+	</eainfo>
+	<mdDateSt Sync="TRUE">20191101</mdDateSt>
+</metadata>

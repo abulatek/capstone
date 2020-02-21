@@ -13,67 +13,6 @@ abstract: "Here is an astract with a quick summary of why this paper is importan
 knitr::opts_chunk$set(echo = FALSE, message=FALSE, warnings=FALSE)
 ```
 
-```{r, cache=TRUE, eval=FALSE}
-# Keeping this code just for a record of what we did to the data
-library(sf) # reads in shapefiles
-grid_areal <- st_read("./shp_plan_regional_parcels/ParcelsRamsey/ParcelsRamsey.shp") # specify shapefile name and location
-grid_point <- st_read("./shp_plan_regional_parcels/ParcelsRamsey/ParcelsRamseyPoints.shp") # specify shapefile name and location
-require(stringr)
-grid_areal_apts <- grid_areal %>%
-    filter(USECLASS1 == 'Apt 4+ units')
-grid_areal_test <- grid_areal %>%
-    filter(USECLASS1 == 'Apt 4+ units' &
-           CTU_NAME == 'Saint Paul' &
-           NUM_UNITS != 0 &
-           FIN_SQ_FT != 0)
-# Read in and clean the areal data
-grid_areal$COUNTY_PIN <- as.character(grid_areal$COUNTY_PIN)
-RamseyCountyDataAreal <- grid_areal %>%
-    filter(str_detect(COUNTY_PIN, '^[0-9]*$') & 
-           CTU_NAME == 'Saint Paul' & 
-           (USECLASS1 == 'Res 1 unit' | USECLASS1 == 'Res 2-3 units' | USECLASS1 == 'Apt 4+ units' ) &
-           ACRES_DEED != 1276.00 &
-           NUM_UNITS != 0 &
-           FIN_SQ_FT != 0 &
-           YEAR_BUILT != 0) %>%
-    mutate(VALUE_PER_UNIT = ifelse(NUM_UNITS == 1, EMV_TOTAL / NUM_UNITS, ifelse(NUM_UNITS != 1, EMV_BLDG / NUM_UNITS, 'error'))) %>%
-    filter(VALUE_PER_UNIT != 'error') %>%
-    mutate(VALUE_PER_UNIT = as.numeric(VALUE_PER_UNIT)) %>%
-    mutate(DECADE_BUILT = YEAR_BUILT - YEAR_BUILT %% 10) %>%
-    mutate(TYPE = ifelse(str_detect(ST_NAME, 'Mississippi'), 'river', 
-                  ifelse(str_detect(ST_NAME, 'Summit') & ANUMBER != 1006, 'summit', 
-                  ifelse(ANUMBER == 1006, 'governor', 'none')))) %>%
-    select(VALUE_PER_UNIT, EMV_TOTAL, EMV_BLDG, 
-           HOMESTEAD, ACRES_DEED, USECLASS1, MULTI_USES, 
-           TAX_EXEMPT, FIN_SQ_FT, GARAGESQFT, BASEMENT, 
-           DECADE_BUILT, ZIP, ST_NAME, TYPE, ANUMBER)
-# Read in and clean the point data
-grid_point$COUNTY_PIN <- as.character(grid_point$COUNTY_PIN)
-RamseyCountyDataPoint <- grid_point %>%
-    filter(str_detect(COUNTY_PIN, '^[0-9]*$') & 
-           CTU_NAME == 'Saint Paul' & 
-           (USECLASS1 == 'Res 1 unit' | USECLASS1 == 'Res 2-3 units' | USECLASS1 == 'Apt 4+ units' ) &
-           ACRES_DEED != 1276.00 &
-           NUM_UNITS != 0 &
-           FIN_SQ_FT != 0 &
-           YEAR_BUILT != 0) %>%
-    mutate(VALUE_PER_UNIT = ifelse(NUM_UNITS == 1, EMV_TOTAL / NUM_UNITS, ifelse(NUM_UNITS != 1, EMV_BLDG / NUM_UNITS, 'none'))) %>%
-    filter(VALUE_PER_UNIT != 'error') %>%
-    mutate(VALUE_PER_UNIT = as.numeric(VALUE_PER_UNIT)) %>%
-    mutate(DECADE_BUILT = YEAR_BUILT - YEAR_BUILT %% 10) %>%
-    mutate(TYPE = ifelse(str_detect(ST_NAME, 'Mississippi'), 'river', 
-                  ifelse(str_detect(ST_NAME, 'Summit') & ANUMBER != 1006, 'summit', 
-                  ifelse(ANUMBER == 1006, 'governor', 'none')))) %>%
-    select(VALUE_PER_UNIT, EMV_TOTAL, EMV_BLDG, 
-           HOMESTEAD, ACRES_DEED, USECLASS1, MULTI_USES, 
-           TAX_EXEMPT, FIN_SQ_FT, GARAGESQFT, BASEMENT, 
-           DECADE_BUILT, ZIP, ST_NAME, TYPE, ANUMBER)
-    
-# Save both the areal data and point data as .RData files
-save(RamseyCountyDataAreal, file='RamseyCountyDataAreal.RData')
-save(RamseyCountyDataPoint, file='RamseyCountyDataPoint.RData')
-```
-
 ```{r, echo=FALSE}
 library(sf)
 library(stringr)
@@ -87,61 +26,20 @@ library(spdep)
 # Load in data from .RData files
 load('RamseyCountyDataAreal.RData')
 load('RamseyCountyDataPoint.RData')
+# Add indicator variables correctly for houses on the river, on summit, or that are governor's mansion
+RamseyCountyDataAreal <- RamseyCountyDataAreal %>%
+    mutate(RIVER = ifelse(str_detect(ST_NAME, 'Mississippi'), 'yes', 'no')) %>%
+    mutate(SUMMIT = ifelse(str_detect(ST_NAME, 'Summit') & ANUMBER != 1006, 'yes', 'no')) %>%
+    mutate(GOVERNOR = ifelse(ANUMBER == 1006, 'yes', 'no'))
+RamseyCountyDataPoint <- RamseyCountyDataPoint %>%
+    mutate(RIVER = ifelse(str_detect(ST_NAME, 'Mississippi'), 'yes', 'no')) %>%
+    mutate(SUMMIT = ifelse(str_detect(ST_NAME, 'Summit') & ANUMBER != 1006, 'yes', 'no')) %>%
+    mutate(GOVERNOR = ifelse(ANUMBER == 1006, 'yes', 'no'))
 Ramsey55105Areal <- RamseyCountyDataAreal %>%
     filter(ZIP == '55105')
 Ramsey55105Point <- RamseyCountyDataPoint %>%
     filter(ZIP == '55105')
 ```
-
-
-## Introduction
-
-We initially wanted to use housing data to investigate gentrification in the Twin Cities area. When this research question proved too large for us to answer with one dataset, we decided to narrow our scope to the 55105 zip code, which includes the Macalester-Groveland and Summit Hill neighborhoods. We are interested in this neighborhood for a couple of reasons: Mac Groveland is the home of our dear Macalester College. The presence of several colleges in the area as well as multiple historical and political factors make Mac Groveland a high-end neighborhood in St. Paul. Yet even within the neighborhood, we see variation in housing. Summit Avenue and the Mississippi River are lined with large mansions, including the Governor’s Mansion and other prominent homes. Apartments and cheap student housing are also mixed into the neighborhood. This project seeks to investigate neighborhood effects on housing prices in Macalester Groveland.
-
-Despite its liberal politics and progressive regional planning, the Twin Cities is becoming more segregated [@orfield2017twin]. Public housing initiatives depend heavily on the status quo of segregated neighborhoods, building affordable housing in central-city, low-income areas that are less resistant to affordable housing development. The political structure of the poverty housing industry (PHI) actually increases segregation by not requiring affordable housing in high-income areas [@orfield2017twin]. 
-
-Once home to orchards and dairy farms, Mac-Groveland was developed into a working-class neighborhood in the early 1900s. The neighborhood was connected to downtown St. Paul by an electric streetcar that ran down Grand Ave [@RamseyCoHistory1973]. During its development, the neighborhood was the site of racial violence, intimidation, and redlining [@walsh2019]. Today, Mac-Groveland is a leafy neighborhood home to colleges, the Grand Ave commercial corridor, the Summit Ave mansions, and recreational areas along both Summit Ave and the Mississippi River. Several new developments have cropped up in the area around Macalester College in the last year, including The Grove, an apartment complex under construction at the southeast corner of the campus.
-
-@dubin1999spatial describe common methods used to analyze and predict single-family housing prices, including multiple regression models. They note the existence of correlation between “neighborhoods,” which contain houses with similar physical characteristics and residents with similar demographics. This link between physical proximity and house characteristics makes it crucial to include spatial correlation in our analysis [@dubin1999spatial].
-
-@sander2008value considered the effect of open spaces and related physical amenities like views and recreation on housing sale prices in Ramsey County. They note that access to open space is not easy to define mathematically, as proximity could be defined in many different ways (for example, the as-the-crow-flies distance is different than the distance using streets and/or walkways). Thus, one of the few ways of analyzing the influence of these amenities on housing prices is to first use the prices themselves to estimate the actual value, in dollars, of these amenities. Like @dubin1999spatial, @sander2008value also use multiple regression modeling to estimate the effect of open space amenities on housing prices, and then they use ordinary least squares to relate the sale price of a house to its individual characteristics.
-
-
-
-## Methods
-
-Our data comes from MetroGIS, a regional geographic information systems initiative serving the Twin Cities area [@parceldata2017]. We downloaded the data from the Minnesota Geospatial Commons, an open source GIS data site. The data is freely available without fees or licenses. The data consists of tax parcel information for the 7-county area, although we narrowed our scope to only the Mac-Groveland neighborhood. Thorough tax parcel data is reported quarterly. Our data is from October 2019. Each parcel has information about its location, size, tax status, value, use classification, building specifications, green space, and more. In some cases, the relationship between the parcel and the building size or number of residences is unclear. Also, a single parcel may have multiple buildings, and a single building may have multiple units. While there were variables indicating these characteristics, the status was not always clearly reported. For example, apartment buildings are sometimes listed as having no square footage. 
-
-We chose several variables from the dataset that we thought could contribute to the estimated market value of each residential unit in the county. There were several quantitative variables that seemed like they should have a correlation with housing value. It makes sense that the square footage of the living area of a home, as well as the square footage of its garage, if it has one, would affect the value of the home. It also seems like there should be a relationship between the market value of a parcel and the deeded acreage for that property because of land value.
-
-We also examined the effect of several categorical variables in the dataset on estimated market value. Our dataset includes a variable for use classification, which divides the parcels into residential, commercial, industrial, and open space applications. These classifications are provided by the Property Tax, Records and Election Services for Ramsey County. We are most interested in residential properties, so we chose to focus on residential units. The residential units are further categorized into single-family homes, multi-family homes, and apartment complexes with more than four units. It is plausible that there could be a different relationship between square footage and market value depending on the use classification of the parcel. Similarly, this relationship could be affected by the homestead status of the house, or whether or not the people who own the house reside in it. A fractional homestead level is listed in the dataset for appropriate properties. 
-
-Another characteristic that can affect the value of a home is the decade in which it was built. We created this variable from an already-existing variable for the year the house was built. 
-
-In analyzing spatial distribution of housing values in Macalester-Groveland, we employed a variety of statistical techniques to analyze the spatial correlation. We began by defining neighborhoods for our areal parcel data of 55105 as being neighbors if their centroids were within 300 feet of each other. 300 feet seemed like an ideal distance; any smaller and homes that are across the street would not be classified as neighbors, but any larger and the number of calculations done by our statistical models would be far too large for our computers to handle. Thus, in choosing d2=300 we had to balance computational inefficiency against variance in the data. 
-
-The next step in our analysis was to build an adjacency matrix, $W$, of each parcel in 55105 and whether its centroid was within 300 feet of each other parcel’s. We used $W$ to perform a Moran’s I neighborhood-based correlation analysis, defined as $$I = \frac{n\sum_i\sum_j w_{ij} (Y_i - \bar{Y})(Y_j - \bar{Y})}{\sum_{i,j} w_{ij} \sum_i(Y_i - \bar{Y})^2}$$
-
-Then, we built an ordinary least squares regression model of expected market value by finished square footage, garage square footage, year built, and whether or not the property is a homestead. We calculated another Moran’s I using our model’s residuals, which still revealed clustering amongst the residuals. Thus, we decided to build a simultaneous autoregressive model (SAR),
-
-$$Y = \lambda W Y + X\beta + \epsilon,\quad\quad \epsilon \sim N(0,\sigma^2I)$$
-
-based on our adjacency matrix $W$. When building our SAR model, we assume that $Y$ is Gaussian and use maximum likelihood estimation when constructing the model. This gives us a model such that 
-
-$$Y \sim N(X\beta, \sigma^2(I-\lambda W)^{-1}(I-\lambda W^T)^{-1})$$
-
-When we use Moran’s I to estimate the spatial autocorrelation of the estimated market value of housing in Ramsey County, we can determine whether or not we should use a spatial regression model to estimate housing value. If the estimated value for Moran’s I is negative, that indicates that high housing values and low housing values are equally interspersed between each other spatially. A Moran’s I value of 0 would indicate spatial randomness, and a positive value for Moran’s I would indicate that there is clustering of values. We can use the reported standard deviation of the Moran’s I value to determine its value.
-
-After we determine that we need a spatial autoregressive model to explain spatial correlation in housing value, we can use a simple linear model to explain the non-spatial variables and then fit a simultaneous autoregressive (SAR) model to the data to remove spatial correlation. When we subtract the final SAR model from the data, the Moran’s I of the residuals can tell us whether or not we have removed the spatial correlation with our SAR model. A Moran’s I value of 0 for the residuals would indicate that the SAR model is a good fit.
-
-We can use a Q-Q plot of the residuals to determine if there is any structure in them. The more linear the Q-Q plot is, the less structure there is remaining in the residuals. We can also examine maps of the residuals to determine if there are any areas of unusually high or low housing value.
-
-
-## Results
-
-In order to determine which non-spatial variables belong in our model, we used scatterplots to determine the relationship between our dependent variable, estimated market value, and each explanatory variable. When making scatterplots, we chose to remove some outliers in the data in order to see trends more clearly. For clarity, we only looked at parcels with a nonzero garage square footage, a deeded acreage under 500 acres, and an estimated market value under 2.5 million dollars. These cuts were only used for visualization and the outliers were included in the rest of our analysis.
-
-We also used maps to understand the spatial distribution of some variables. This helped us to get a sense for our data and to decide which variables may be spatially correlated. First, we mapped the total estimated market value of parcels in Mac Groveland. We see that high-value housing is mostly along the river and Summit Ave. The area east of Snelling tends to be lower value than west of Snelling, and north of St. Clair Ave higher value than south.
 
 ```{r, echo = FALSE}
 RamseyCountyDataPoint_plot <- RamseyCountyDataPoint %>%
@@ -152,16 +50,12 @@ RamseyCountyDataPoint_plot <- RamseyCountyDataPoint %>%
 
 ```{r, echo=FALSE}
 ggplot(Ramsey55105Areal) + 
-    geom_sf(aes(fill = EMV_TOTAL^0.29), lwd = 0) +
+    geom_sf(aes(fill = log10(EMV_TOTAL)), lwd = 0) +
     coord_sf(datum=st_crs(Ramsey55105Areal, value = 3857)) + 
-    scale_fill_gradientn(colours=c("#1D263B", "#5C6784","#A0EADE", "#4CB963","#157F1F"), values=c(0,0.06,0.094,0.15,1)^0.29,
-                         guide="colourbar",
-                         limits=c(0,3614400)^0.29, breaks=c(0,400000,3614400)^0.29,labels=c('$0',"$400,000","$3,614,400"), 
-                         name='Total estimated market value') 
+    labs(fill="Logarithm of\ntotal estimated\nmarket value (USD)") +
+    theme_grey(base_size = 16) 
 #midpoint of legend is $339,800, which is the median estimated total market value in 55105.
 ```
-
-Large houses appear to correlate with high market value, as shown above. Both appear to be spatially clustered, with high-value housing close to high-value housing and low-value housing close to low-value housing.
 
 ```{r, echo=FALSE}
 ggplot(Ramsey55105Areal) + 
@@ -181,8 +75,6 @@ ggplot(data = RamseyCountyDataPoint_plot, mapping = aes(x = ACRES_DEED, y = EMV_
     ggtitle("Total market value versus deeded acres") + xlab("Deeded acres") + ylab("Total estimated market value in dollars")  
     # May want to remove some outliers of deeded acres
 ```
-
-We also examined the effect of several categorical variables in the dataset on estimated market value. First, we separated the dataset by use classification to see if any relationships differ for single-family homes, multi-family homes, and apartment buildings. There are few larger apartment buildings left in the dataset after cleaning, but at first glance, it seems like there could be a different relationship between finished square footage and estimated market value for residential properties with 1 unit versus properties with 2 to 3 units. Because of this, it may be worth it to include the use classification in our model. We also noticed a different relationship between square footage and market value for houses that were homesteads versus those that are not homesteads or are partial homesteads.
 
 ```{r}
 ggplot(data = RamseyCountyDataPoint_plot, mapping = aes(x = FIN_SQ_FT, y = EMV_TOTAL)) + geom_point() + 
@@ -209,27 +101,6 @@ ggplot(Ramsey55105Areal) +
 #midpoint of legend is $325,300, which is the median value per unit in 55105.
 ```
 
-In order to determine whether or not we needed a spatial model to explain spatial correlation, we calculated the Moran’s I value for the estimated market value of the houses in Ramsey County. We calculated an observed Moran’s I value of 0.333, which indicates some spatial clustering. This indicated to us that we should use a SAR model to estimate spatial correlation. 
-
-First, we created a linear model to perform regression on the estimated market value. We used the variables that we had determined earlier to have visible relationships with housing value. These variables were the finished square footage of the house, the square footage of the garage, the decade the house was built, its homestead status, and its use classification (number of units). We also decided to include an indicator variable for outliers after our initial analysis. This indicator variable indicates whether or not the parcel is the Governor’s mansion, a house on Summit Avenue, or a house along the Mississippi River.
-
-When we subtracted just the linear model from the data and calculated the Moran’s I value, we get a new value of 0.123, which indicates that we removed some of the correlation between the parcel characteristics and their estimated market value. However, the value is still above 0, so there is still spatial correlation present in the data. There seems to be some structure in these residuals, with variation from zero increasing as estimated market value increases. This could be because we have fewer data points at higher housing values, so our predictions are less accurate for those parcels.
-
-Talk about how we defined neighborhoods. -Sam
-Our distance-based neighborhoods connecting parcels with centroids within 300 feet of each other ended up creating a very interconnected Macalester-Groveland neighborhood. Since the neighborhood was mostly developed as a residential urban area at the turn of the 20th century, houses are clustered more closely together in 55105 than they are in other parts of the Twin Cities. Thus, the neighborhood appears to be quite interconnected, leading to our adjacency matrix $W$ connecting each house to a number of its neighbors.
-
-Talk about the SAR model we built, how that worked -Sam
-Because our linear model did not account sufficiently for spatial correlation, we built a SAR model using the same variables as the linear model and with the weighting matrix $W$.
-
-[show SAR model in nice LaTeX]
-
-Talk about the results, but don't make concluding remarks yet! Stick to facts and observations.
-Talk about how well our SAR model explained housing prices (QQ plot, etc) - Alyssa
-Our final Moran’s I value for the residuals was -0.0315, which is quite close to zero. This means that we have removed a lot of the spatial correlation that was present in the data before we used the SAR model to do regression. We also made a Q-Q plot of the residuals to determine if there is much remaining structure in them. For the most part, the Q-Q plot appears linear, but at the edges, there is some deviation from linearity. This may indicate that we have not fully removed all of the correlation from the data. 
-
-Observing the plots of the mapped residuals on a linear scale, we notice a few bright spots in the northeast and southwest corners of the zip code. These are outliers with unusually high housing values. Specifically, the Governor's mansion is the large property in the northeast with the highest value on the plot, and the houses on the western side of the plot are along the Mississippi River and are apparently quite valuable. However, for the most part, the rest of the zip code seems to have no bright spots. This is even more visible when we take the logarithm of the residuals. There are no clusters of high or low residual values in the bulk of the zip code, but the properties along the Mississippi River seem to have slightly higher residuals.
-
-
 ```{r, echo = FALSE, results = "hide"}
 # Distance-based method
 DistNB <- dnearneigh(Ramsey55105Point,d1=0, d2=300) # d2 is in feet
@@ -242,7 +113,7 @@ W[1:10,1:10]
 
 ```{r, echo = FALSE, results = "hide"}
 Moran.I(Ramsey55105Areal$EMV_TOTAL, W, na.rm=TRUE) #Moran's I of adjacency matrix W
-RamseyLM <- lm(EMV_TOTAL ~ FIN_SQ_FT + GARAGESQFT + DECADE_BUILT + HOMESTEAD + USECLASS1 + TYPE, data = Ramsey55105Areal) #create LM to model residuals using morans I 
+RamseyLM <- lm(EMV_TOTAL ~ FIN_SQ_FT + GARAGESQFT + DECADE_BUILT + HOMESTEAD + USECLASS1 + RIVER + SUMMIT + GOVERNOR, data = Ramsey55105Areal) #create LM to model residuals using morans I 
 summary(RamseyLM)
 # Plot residuals against prediction
 ggplot(data = Ramsey55105Areal) + geom_point(aes(x = predict(RamseyLM), y = RamseyLM$resid), alpha = 0.3) +
@@ -254,7 +125,7 @@ Moran.I(RamseyLM$residuals, W, na.rm=TRUE)
 ```{r, echo = FALSE, results = "hide", cache=TRUE}
 library(spatialreg)
 listW <- nb2listw(nb)
-Dat_sar = spautolm(formula = EMV_TOTAL ~ FIN_SQ_FT + GARAGESQFT + DECADE_BUILT + HOMESTEAD + USECLASS1 + TYPE, data = Ramsey55105Areal, listw = listW, family = "SAR")
+Dat_sar = spautolm(formula = EMV_TOTAL ~ FIN_SQ_FT + GARAGESQFT + DECADE_BUILT + HOMESTEAD + USECLASS1 + RIVER + SUMMIT + GOVERNOR, data = Ramsey55105Areal, listw = listW, family = "SAR")
 summary(Dat_sar)
 Ramsey55105Areal$sar_resid <- NA #there are some missing values in Y and X
 Ramsey55105Areal$sar_resid <- resid(Dat_sar)

@@ -72,14 +72,15 @@ We found a positive correlation between both the finished square footage and gar
 
 ```{r}
 ggplot(data = RamseyCountyDataPoint_plot, mapping = aes(x = ACRES_DEED, y = EMV_TOTAL)) + geom_point() + 
-    ggtitle("Total market value versus deeded acres") + xlab("Deeded acres") + ylab("Total estimated market value in dollars")  
+    ggtitle("Total market value versus deeded acres") + xlab("Deeded acres") + ylab("Total estimated market value in dollars")
     # May want to remove some outliers of deeded acres
 ```
 
 ```{r}
 ggplot(data = RamseyCountyDataPoint_plot, mapping = aes(x = FIN_SQ_FT, y = EMV_TOTAL)) + geom_point() + 
     ggtitle("Total market value versus finished square footage, sorted by use classification") + facet_wrap(~USECLASS1) + 
-    xlab("Finished square footage") + ylab("Total estimated market value in dollars")
+    xlab("Finished square footage") + ylab("Total estimated market value (USD)") +
+    theme_grey(base_size = 16) 
 ```
 
 Although we did not include any time series analysis in our project, we also examined the relationship between the decade the house was built and its estimated market value. Though there are many outliers for each decade, there seems to be an oscillating trend with time, with a local maximum during World War II and a large increase in the third quartile of housing value in the 2010s.
@@ -118,7 +119,8 @@ summary(RamseyLM)
 # Plot residuals against prediction
 ggplot(data = Ramsey55105Areal) + geom_point(aes(x = predict(RamseyLM), y = RamseyLM$resid), alpha = 0.3) +
     geom_smooth(aes(x = predict(RamseyLM), y = RamseyLM$resid), method = 'lm', se = FALSE) + 
-    xlab("Predicted estimated market value") + ylab("Residual")
+    xlab("Predicted estimated market value (USD)") + ylab("Residual") +
+    theme_grey(base_size = 16) 
 Moran.I(RamseyLM$residuals, W, na.rm=TRUE)
 ```
 
@@ -136,10 +138,14 @@ qqnorm(Ramsey55105Areal$sar_resid)
 qqline(Ramsey55105Areal$sar_resid)
 Ramsey55105Areal  %>%
   ggplot()+
-  geom_sf(aes(fill = abs(sar_resid)), lwd = 0) #not logged to show outliers
+  geom_sf(aes(fill = abs(sar_resid)), lwd = 0) + #not logged to show outliers
+  labs(fill="Residuals \n(estimated \nmarket value \n(USD))") +
+  theme_grey(base_size = 16) 
 Ramsey55105Areal  %>%
   ggplot()+
-  geom_sf(aes(fill = log(abs(sar_resid))), lwd = 0) #Map the residuals (logged to see variation for small residuals)
+  geom_sf(aes(fill = log(abs(sar_resid))), lwd = 0) +     
+  labs(fill="Logarithm of \nresiduals \n(estimated \nmarket value \n(USD))") +
+  theme_grey(base_size = 16) #Map the residuals (logged to see variation for small residuals)
 # There's no areas where the colors are really bright or really dark (clustered). There seems to be uniform color or variation across space. This indicates we did a good job of capturing the spatial correlation with the SAR model, or at least not over or underestimating home values in whole areas (systematically). There are a few outliers that the model doesn't predict well (the Governor's Mansion), but for the most part it accounts for spatial correlation well.
 ```
 
